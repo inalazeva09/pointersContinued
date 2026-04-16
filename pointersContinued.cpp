@@ -27,12 +27,17 @@ using namespace std;
 // }
 
 
-void addStuff(int& y) {
-    y+= 3; 
+void multiplyByTwo(int &num) {
+    num *= 2; 
 }
 
 int main() {
-    int x = 5; 
-    addStuff(x); 
-    cout << "x = " << x << endl; 
+    int userInput;
+
+    cout << "Enter an integer: ";
+    cin >> userInput;
+
+    multiplyByTwo(userInput);
+
+    cout << "The new value is: " << userInput << endl;
 }
